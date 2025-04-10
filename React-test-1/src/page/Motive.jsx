@@ -1,33 +1,35 @@
 import React from "react";
 import Card from "../components/Card";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 
-function Motive() {
+export const Motive =()=>  {
     return (
       <div className="page">
+        <Header />
+        <Navbar />
         <div className="card-grid">
         <Card
             title="Lorem Ipsum 1"
-            image="/200w.gif"
+            image="/psychiatry.png"
             description="Dolor sit amet, consetetur sadipscing elitr, sed diam"
           />
           <Card
             title="Lorem Ipsum 2"
-            image="/cat-meme.gif"
+            image="/responsive.png"
             description="Dolor sit amet, consetetur sadipscing elitr, sed diam"
           />
           <Card
             title="Lorem Ipsum 3"
-            image="/bumble-bee-sus.gif"
+            image="/search.png"
             description="Dolor sit amet, consetetur sadipscing elitr, sed diam"
           />
           <Card
             title="Lorem Ipsum 4"
-            image="/shrek-rizz-shrek-meme.gif"
+            image="partly_cloudy.png"
             description="Dolor sit amet, consetetur sadipscing elitr, sed diam" 
           />
         </div>
       </div>
     );
   }
-  
-  export default Motive;
